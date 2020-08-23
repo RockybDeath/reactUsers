@@ -35,7 +35,7 @@ export default class SortUsers extends React.Component {
                 <button className="btn-sort" onClick={() => this.sort()}>
                     Sort by id
                 </button>
-                <button className="btn btn-danger" onClick={this.reset}>
+                <button className="btn btn-danger btn-reset" onClick={this.reset}>
                     Reset
                 </button>
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 export default ({ data, active }) => {
   if (!data || !data[active]) { return (
     <div className="user-active">
-      <h3>Select User</h3>
+      <p className="user-choose">Select User</p>
     </div>
   )
   }
@@ -12,7 +12,7 @@ export default ({ data, active }) => {
   return (
     <div className="user-active">
       <div className="user-active__border">
-        <h3>{user.username}</h3>
+        <p className="user-active__username">{user.username}</p>
         <table className="table table-dark">
           <tbody>
             <tr>

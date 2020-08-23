@@ -1,10 +1,18 @@
 .block-signIn
     position: absolute
-    width: 320px
+    width: 300px
     left: 50%
-    margin-left: -160px
-    top: 40%
+    margin-left: -150px
+    top: 30%
     margin-top: -75px
+
+.block-signIn_label
+    color: rgb(255, 255, 255)
+    margin: 0 0 20px
+    text-align: center
+    // font-size: 30px
+    font-size: calc(10px + 3.5vmin)
+    width: 100%
 .loader
     display: block
     position: absolute
@@ -12,7 +20,7 @@
     right: 40%
 .form-signIn
     height: 90px
-    width: 300px
+    width: 100%
     border-radius: 8px
     position: relative
 
@@ -39,6 +47,7 @@
     top: -2px
     padding: 0 0 0 20px
     font-weight: 700
+    font-size: calc(10px + 1vmin)
 
 .form-signIn__input:focus
     color: rgb(255, 255, 255)
@@ -49,8 +58,8 @@
     position: relative
     left: 20%
     padding: 8px 16px 8px 16px
-    font-size: 1.25rem
     line-height: 1.5
+    font-size: calc(10px + 1.5vmin)
     border-radius: .3rem
     color: #fff
     margin: 40px 0 0 0px
@@ -70,6 +79,7 @@
 .form-signIn__linkRegister
     text-decoration: none
     color: #fff
+    font-size: calc(10px + 1.5vmin)
 
 .form-signIn__linkRegister:hover
     text-decoration: underline
@@ -77,15 +87,12 @@
 .form-signIn .blockLink
     margin-top: 20px
     text-align: center
-.block-signIn 
-    h1
-        width: 300px
 .has-error
     border-color: red
 .form-errors
     margin-top: 20px
 .form-noerrors.has-error__text
-    font-size: 12px
+    font-size: calc(10px + 0.7vmin)
     color: #f84e4e
     display: block
     text-align: center
@@ -93,7 +100,7 @@
 .form-noerrors
     display: none
 .errorMessage
-    font-size: 14px
+    font-size: calc(10px + 1vmin)
     color: #f84e4e
     text-align: center
     margin: 0

@@ -22,8 +22,6 @@ export class SignIn extends React.Component{
         event.preventDefault();
         // Username: test_super
         // Password: Nf<U4f<rDbtDxAPn
-        // this.validateField("username", this.state.username)
-        // this.validateField("password", this.state.password)
         if(this.state.fromValid){
             const data={ "username":this.state.username,"password": this.state.password};
             this.setState({
@@ -83,7 +81,7 @@ export class SignIn extends React.Component{
             break;
         }
         this.setState({
-            fromValid: !(this.state.usernameValid && this.state.passwordValid)
+            fromValid: (!(this.state.usernameValid) && !(this.state.passwordValid))
         })
     }
     render(){
@@ -91,7 +89,7 @@ export class SignIn extends React.Component{
             <div>
             <div className="block-signIn">
                 <img className="loader" style={{visibility:this.state.load}} src={loadImage} alt="Load"></img>
-                <h1>Please sign in</h1>
+                <p className="block-signIn_label">Please sign in</p>
                 <form onSubmit={this.restApiSign} className="form-signIn">
                     <input className={classnames("form-signIn__input",{"has-error":this.state.usernameValid})} onChange={this.handleUserInput} autoComplete="off" type="text" placeholder="Type your username" name="username"/>
                     <input className={classnames("form-signIn__input",{"has-error":this.state.passwordValid})} onChange={this.handleUserInput} autoComplete="off" type="password" placeholder="Type your password" name="password"/>

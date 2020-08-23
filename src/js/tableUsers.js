@@ -75,7 +75,7 @@ export class Users extends React.Component{
             <div className="users-content">
                 <img className="loaderForTable" style={{visibility:this.state.load}} src={loadImage} alt="Load"></img>
                 <button className="table-btn submitBtn" onClick={() => this.showUsers()}>Show users</button>
-                <h1>{this.state.errorMessage}</h1>
+                <p className="errorForTable">{this.state.errorMessage}</p>
                 <div className="users-content__instruments">
                     <div className="users-content__instruments log">
                         <SortUsers id={this.state.id} data={this.state.data} filterData={this.state.filterData} updateData={this.updateData}/>
