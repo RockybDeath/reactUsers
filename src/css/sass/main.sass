@@ -1,0 +1,152 @@
+*
+    margin: 0
+    padding: 0
+    font-size: 16px
+#body
+    background-color: #282c34
+    color: #fff
+h1
+    color: rgb(255, 255, 255)
+    margin: 0 0 20px
+    text-align: center
+.header-container
+    // position: relative
+    height: 60px
+    display: flex
+    justify-content: space-between
+    padding: 0 40px
+.header
+    position: relative
+    background-color: #14181f
+    height: 60px
+    line-height: 60px
+.header-link
+    outline-style: none
+    cursor: pointer
+    text-decoration: none
+    position: relative
+    white-space: nowrap
+.header-logo__image
+    width: 74px
+    height: 40px
+.header-label
+    color: white
+    display: inline-block
+.menu-items
+    list-style-type: none
+.menu-item
+    text-align: center
+    border-bottom: 4px solid #4c5363
+    .header-item.header-link
+        margin: 0
+        .header-label
+            margin: 0
+    .header-item.header-link:hover
+            border: 0px
+    &.activeBlock
+        border-bottom-color: #ffffff
+.header-items
+    display: inline-block
+    &.menu
+        display: none
+        padding: 25px 25px 0px 25px
+.header-profileItems
+    display: inline-block
+    right: 40px
+.header-item
+    margin-right: 30px
+    &.header-link
+        padding-bottom: 4px
+        border-bottom: 2px solid transparent;
+    &.header-link:hover
+        border-bottom-color: #4b4b4b
+    &.header-link-activeBlock
+        border-bottom-color: #ffffff
+.header-link span
+    position: absolute
+    // margin-left: 80px
+.header-link span,
+.header-link span::before,   
+.header-link span::after
+    background-color: white
+    margin-top: -1px;
+    width: 20px
+    height: 2px
+    display: block
+    right: -80%
+    top: 50%
+.header-link span::before,
+.header-link span::after
+    content: ''
+    transition: 0.5s
+.header-link span::before
+    transform: translateY(-3px)    
+.header-link span::after
+    transform: translateY(4px) 
+.header-link-active span
+    height: 0
+.header-link-active span::before
+    transform: rotate(45deg)
+.header-link-active span::after
+    transform: rotate(-45deg)
+.header-accountDropdownLogged
+    display: none
+    position: absolute
+    top: 59px
+    right: 20px
+    width: 100%
+    max-width: 20em
+    box-sizing: border-box
+    background-color: rgba(21,26,35,0.95);
+    z-index: 99
+.header-sectionLogin
+    padding: 20px
+    box-sizing: border-box
+    // border: solid 1px #00aeff
+.header-accountDropdownButtonLink
+    box-sizing: border-box
+    color: #fff
+    width: 100%
+    max-width: 100%
+    outline-style: none
+    display: inline-block
+    position: relative
+    background-color: #006fb2
+    border-top: solid 1px rgba(255,255,255,0.08); 
+    line-height: 1
+    padding: 10px 50px
+    text-decoration: none
+    text-align: center
+    cursor: pointer
+    transition: color 200ms,background-color 200ms,border-color 200ms
+.header-accountDropdownButtonLink:hover
+    color: #ffffff
+    text-decoration: none 
+    background-color: #0069d9;
+    border-color: #0062cc;
+.header-accountDropdownLink
+    color: #fff
+    transition: color 200ms,background-color 200ms
+    height: 44px
+    line-height: 44px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    text-decoration: none
+    border-top: solid 1px rgba(255,255,255,0.08);
+.header-accountDropdownLinkLabel
+    display: inline-block
+    padding: 0 20px
+    font-size: 16px
+.emptyMain
+    display: none
+    position: absolute
+    top: 50%
+    left: 50%
+    width: auto
+.is-open
+    display: block
+    
+
+    
+    
